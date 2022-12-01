@@ -13,7 +13,7 @@ function aprovaremprestimo() {
     let valorparcelas = valoremprestimo / numeroparcelas
 
     if(valorparcelas <=trintaporcento){
-        aprovado
+        document.getElementById("resultado"). innerHTML=parseFloat( emprestimo)
     }else {
         emprestio
     }
