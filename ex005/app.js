@@ -5,16 +5,17 @@
 function aprovaremprestimo() {
 
 
-    let valoremprestimo = document.getElementById('valoremprestimo')
-    let numeroparcelas = document.getElementById('numeroparcelas')
-    let salario = document.getElementById('salario')
+    let valoremprestimo = document.getElementById('valoremprestimo').value
+    let numeroparcelas = document.getElementById('numeroparcelas').value
+    let salario = document.getElementById('salario').value
 
     let trintaporcento = parseFloat(salario) * 0.30;
     let valorparcelas = valoremprestimo / numeroparcelas
+   
 
     if(valorparcelas <=trintaporcento){
-        document.getElementById("resultado"). innerHTML=parseFloat( emprestimo)
-    }else {
-        emprestio
+        document.getElementById("resultado"). innerHTML="aprovado"
+    }else{
+        document.getElementById("resultado"). innerHTML="recusado"
     }
 }
