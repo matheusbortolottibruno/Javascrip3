@@ -9,13 +9,19 @@
 
 function Classificação(){
 
-    let Alimentonãoperecível= document.getElementById('Alimentonãoperecível').value
-    let Alimentoperecível = document.getElementById(' Alimentoperecível').value
-    let Higienepessoal= document.getElementById('Higienepessoal').value
-    let  Utensíliosdomésticos = document.getElementById(' Utensíliosdomésticos').value
+    let codigo= document.getElementById('codigo').value
+    
+    
+    if(codigo == 1){
+        document.getElementById("resultado"). innerHTML="Alimento não-perecível"
+
+    }else if(codigo == 2,3,4){
+        document.getElementById("resultado"). innerHTML="Alimento perecível"
+
+    }else if( == 5,6)
     
 
-    
+
 
 
 }
